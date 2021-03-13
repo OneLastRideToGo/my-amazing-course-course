@@ -1,0 +1,16 @@
+title: My Amazing Course
+description: "I am \U0001F9B8‍♂️ \U0001F4AAon fixing the mistakes I haven done while . If any have ideas \U0001F4A1 would be greatly use to this \U0001F30E\U0001F5FA and my ⏲️ can weigh me down I am  resting, for the moment. I am making changes daily, I love you all."
+template:
+  repo: my-amazing-course-template
+  name: my-amazing-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
